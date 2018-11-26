@@ -1,3 +1,18 @@
+%   Copyright (C) 2018  Antonio Franco
+%
+%     This program is free software: you can redistribute it and/or modify
+%     it under the terms of the GNU General Public License as published by
+%     the Free Software Foundation, either version 3 of the License, or
+%     (at your option) any later version.
+% 
+%     This program is distributed in the hope that it will be useful,
+%     but WITHOUT ANY WARRANTY; without even the implied warranty of
+%     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%     GNU General Public License for more details.
+% 
+%     You should have received a copy of the GNU General Public License
+%     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 function I = find_lattice_plane(n,r)
 %function I = find_lattice_plane(nPoints,r)
 % Recursively finds all the non-negative points x_i with i=1..n such that x_1 + x_2 + ... + x_n = r
