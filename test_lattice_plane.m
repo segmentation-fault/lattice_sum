@@ -58,6 +58,10 @@ zlabel('x_3')
 grid on
 hold off
 
+%Test duplicates
+I1 = cell_unique(I);
+assert(numel(I1)==numel(I))
+
 %Test with a multidimensional hyperplane
 r = 10;
 n = 5;
@@ -66,6 +70,10 @@ parfor i=1:numel(I)
     v = I{i};
     assert(sum(v)==r);
 end
+
+%Test duplicates
+I1 = cell_unique(I);
+assert(numel(I1)==numel(I))
 
 elapsedTime = toc;
 s = seconds(elapsedTime);
