@@ -27,9 +27,11 @@ for i=0:r-sum(v)
     if numel(v) < n-1
         I = lattice_helper(r,I,[v i],n);
     else
-        I1 = I;
-        I1{end+1} = [v r-sum(v)];
-        I=cell_unique(I1);
+%         I1 = I;
+%         I1{end+1} = [v r-sum(v)];
+%         I=cell_unique(I1);
+        I{end+1} = [v r-sum(v)];
+        break;
     end
 end
 

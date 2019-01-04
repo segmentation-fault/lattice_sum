@@ -7,5 +7,5 @@ Given a number of dimensions n and an integer r, it finds all the vectors ![equa
 ## Validation
 In test_lattice_plane a graphical and a multidimensional validation is performed.
 
-## Known issues
-It tends to perform more iterations than necessary (essentially finding many duplicate points), that's why a set is used in the helper function.
+## Changelog
+Now performs only the necessary iterations
